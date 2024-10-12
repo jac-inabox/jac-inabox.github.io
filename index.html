@@ -3,9 +3,75 @@
 	<head>
 		<meta charset="UTF-8"> 
 		<title>In A Box</title>
+<style>
+body {
+	margin:0;
+	padding:0;
+}
+main {
+	position: relative;
+	background: #eee;
+	padding: 50px 0;
+	margin: 50px 0;
+}
+main:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	width: calc(50% - 1em);
+	height: 100%;
+	background: url(assets/character.png) no-repeat right top;
+	background-size: auto 100%;
+}
+main .child {
+	padding-left: 50%;
+}
+
+main .heading h1 {
+	margin: 0;
+	background: red;
+}
+main .heading:before, main .heading:after {
+	display: block;
+	content: "\00a0";
+}
+main .heading:before {
+	margin-top: 1em;
+	background: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg width="32" height="16" version="1.1" viewBox="0 0 32 16" xmlns="http://www.w3.org/2000/svg"><path d="m0 16 16-16 16 16z" fill="%23f00" stroke="none" stroke-width="1px"/></svg>') center; 
+	background-size: auto 100%;
+}
+main .heading:after {
+	background: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg width="32" height="16" version="1.1" viewBox="0 0 32 16" xmlns="http://www.w3.org/2000/svg"><path d="m0 0 16 16 16-16z" fill="%23f00" stroke-width="1px"/></svg>') center;
+	background-size: auto 100%;
+	margin-bottom: 1em;
+}
+
+li {
+	list-style-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="8" stop-color="%23000000" stroke-linejoin="round" stroke-width="18.9" style="paint-order:stroke fill markers"/><path d="m9.82 14.5c-0.121 0.0342-2.79-3.52-2.91-3.56-0.118-0.0436-4.46 0.93-4.52 0.825-0.07-0.104 2.49-3.74 2.5-3.87s-2.26-3.95-2.18-4.05c0.078-0.099 4.33 1.21 4.45 1.18 0.121-0.0342 3.06-3.38 3.18-3.33 0.118 0.0436 0.186 4.49 0.256 4.6 0.07 0.104 4.16 1.86 4.15 2-0.0049 0.126-4.22 1.56-4.29 1.66-0.078 0.099-0.492 4.52-0.615 4.56z" fill="%23fff" stop-color="%23000000" stroke-linejoin="round" stroke-width="18.9" style="paint-order:stroke fill markers"/></svg>');
+}
+
+</style>
 	</head>
 	<body>
-		<h1>In A Box</h1>
+		<main>
+			<div class="heading">
+				<h1 class="child">
+					In A Box
+				</h1>
+			</div>
+			<nav class="child">
+				<ul>
+					<li>Mastodon</li>
+					<li>Blue sky</li>
+					<li>Linkedin</li>
+					<li>moop</li>
+				</ul>
+			</nav>
+		</main>
 	</body>
+	<footer>
+		Character and Logo design by <a href="https://ko-fi.com/darkmagenuggetstudio/">DarkMage Nugget Studio</a>.
+	</footer>
 </html>
 
