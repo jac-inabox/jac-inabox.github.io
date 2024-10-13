@@ -1,0 +1,43 @@
+<svg width="10" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="mask1">
+      <g transform="translate(5,0) rotate(0)">
+        <polygon id="s" points="5,0 0,5 -5,0 0,-5" fill="white"/>
+        <use href="#s" transform="translate(-5,5)" />
+        <use href="#s" transform="translate(5,5)" />
+        <use href="#s" transform="translate(0,10)  scale(0.9)" />
+        <use href="#s" transform="translate(-5,15) scale(0.9)" />
+        <use href="#s" transform="translate(5,15)  scale(0.9)" />
+        <use href="#s" transform="translate(0,20)  scale(0.8)" />
+        <use href="#s" transform="translate(-5,25) scale(0.8)" />
+        <use href="#s" transform="translate(5,25)  scale(0.8)" />
+        <use href="#s" transform="translate(0,30)  scale(0.7)" />
+        <use href="#s" transform="translate(-5,35) scale(0.7)" />
+        <use href="#s" transform="translate(5,35)  scale(0.7)" />
+        <use href="#s" transform="translate(0,40)  scale(0.6)" />
+        <use href="#s" transform="translate(-5,45) scale(0.6)" />
+        <use href="#s" transform="translate(5,45)  scale(0.6)" />
+        <use href="#s" transform="translate(0,40)  scale(0.5)" />
+        <use href="#s" transform="translate(-5,45) scale(0.5)" />
+        <use href="#s" transform="translate(5,45)  scale(0.5)" />
+        <use href="#s" transform="translate(0,50)  scale(0.4)" />
+        <use href="#s" transform="translate(-5,55) scale(0.4)" />
+        <use href="#s" transform="translate(5,55)  scale(0.4)" />
+        <use href="#s" transform="translate(0,60)  scale(0.3)" />
+        <use href="#s" transform="translate(-5,65) scale(0.3)" />
+        <use href="#s" transform="translate(5,65)  scale(0.3)" />
+        <use href="#s" transform="translate(0,70)  scale(0.2)" />
+        <use href="#s" transform="translate(-5,75) scale(0.2)" />
+        <use href="#s" transform="translate(5,75)  scale(0.2)" />
+        <use href="#s" transform="translate(0,80)  scale(0.1)" />
+        <use href="#s" transform="translate(-5,85) scale(0.1)" />
+        <use href="#s" transform="translate(5,85)  scale(0.1)" />
+      </g>
+    </mask>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000099" />
+      <stop offset="100%" stop-color="#00ffff" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="10" height="100" fill="url(#grad1)" mask="url(#mask1)" />
+</svg>
